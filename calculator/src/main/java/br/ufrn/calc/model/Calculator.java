@@ -98,9 +98,7 @@ public class Calculator {
      * @return
      */
     public int div(int a, int b) {
-        if(b == 0)
-            throw new IllegalArgumentException("Can not divide by zero");
-        return a/b;
+        return a%b;
     }
 
 
@@ -147,7 +145,9 @@ public class Calculator {
      * @return
      */
     public double square(double a) {
-        return Math.sqrt(a);
+        if(b == 0)
+         throw new IllegalArgumentException("There is no square root of negative number");
+       return Math.sqrt(a);
     }
 
 
