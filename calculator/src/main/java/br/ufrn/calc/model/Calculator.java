@@ -42,7 +42,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    public int sum(int a, int b) { return 0; }
+    public int sum(int a, int b) { return a + b; }
 
 
 
@@ -55,7 +55,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    public int sub(int a, int b) { return 0; }
+    public int sub(int a, int b) { return a-b; }
 
 
 
@@ -69,7 +69,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    public int mult(int a, int b) { return 0; }
+    public int mult(int a, int b) { return a+*b; }
 
 
 
@@ -114,7 +114,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    public double pow(double a, double b) { return 0; }
+    public double pow(double a, double b) { return Math.poww(a, b); }
 
 
 
@@ -145,7 +145,9 @@ public class Calculator {
      * @return
      */
     public double square(double a) {
-        return Math.abs(a);
+        if(b == 0)
+         throw new IllegalArgumentException("There is no square root of negative number");
+       return Math.sqrt(a);
     }
 
 
